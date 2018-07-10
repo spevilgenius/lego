@@ -1,0 +1,15 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\build",
+    "\\config",
+    "\\dist\\static",
+    "\\dist\\static\\img",
+    "\\src",
+    "\\src\\assets",
+    "\\src\\assets\\sass",
+    "\\static\\img"
+  ],
+  "SelectedNode": "\\build\\utils.js",
+  "PreviewInSolutionExplorer": false
+}

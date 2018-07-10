@@ -1,0 +1,47 @@
+@import "legobootstrap/variables";
+@import "legobootstrap/mixins";
+
+@import "legobootstrap/typography";
+
+// Core CSS
+@import "legobootstrap/misc";
+@import "legobootstrap/sidebar-and-main-panel";
+
+@import "legobootstrap/buttons";
+@import "legobootstrap/social-buttons";
+@import "legobootstrap/inputs";
+
+@import "legobootstrap/alerts";
+@import "legobootstrap/tables";
+
+@import "legobootstrap/checkbox-radio-switch";
+@import "legobootstrap/navbars";
+@import "legobootstrap/footers";
+@import "legobootstrap/tabs-navs-pagination";
+@import "legobootstrap/progress_bars";
+
+
+// Fancy Stuff
+@import "legobootstrap/cards";
+@import "legobootstrap/tooltip";
+@import "legobootstrap/responsive";
+//@import "legobootstrap/bootstrap-switch";
+
+//plugins css
+@import "legobootstrap/plugins/animate";
+//@import "legobootstrap/plugins/sweetalert2";
+@import "legobootstrap/plugins/perfect-scrollbar";
+@import "legobootstrap/plugins/vue-tabs";
+
+// element-ui customizations
+@import "legobootstrap/element/collapse";
+@import "legobootstrap/element/tags";
+@import "legobootstrap/element/tables";
+@import "legobootstrap/element/slider";
+@import "legobootstrap/element/date_picker";
+@import "legobootstrap/element/select";
+@import "legobootstrap/element/input";
+@import "legobootstrap/element/modal";
+
+// pages
+@import "legobootstrap/pages";
