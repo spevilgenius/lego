@@ -6,7 +6,6 @@ import App from './components/App.vue'
 import routes from './routes'
 
 // components
-import HelloWorld from '@/components/HelloWorld'
 import ThemeLayout from '@/components/Layout/ThemeLayout.vue'
 
 // import routes from './router'

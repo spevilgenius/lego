@@ -7,13 +7,14 @@
   }
 
 }
-.navbar{
+.navbar {
   border: $none;
   font-size: $font-size-navbar;
   border-radius: 0;
   min-height: 40px;
   max-height: 40px;
-  background-color: $white-navbar;
+  /*background-color: $white-navbar;*/
+  background-repeat: repeat repeat;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 
   .navbar-brand {
@@ -22,40 +23,41 @@
     font-size: 18px;
     color: $default-color !important;
 
-    &:hover{
+    &:hover {
       color: #5e5e5e;
     }
   }
 
-  .navbar-wrapper{
+  .navbar-wrapper {
     display: inline-flex;
     align-items: center;
   }
 
-  .navbar-toggler{
+  .navbar-toggler {
     width: 37px;
     height: 27px;
     vertical-align: middle;
     outline: 0;
     cursor: pointer;
 
-    &.navbar-toggler-left{
+    &.navbar-toggler-left {
       position: relative;
       left: 0;
       padding-left: 0;
     }
 
-    &.navbar-toggler-right{
+    &.navbar-toggler-right {
       padding-right: 0;
     }
 
-    & .navbar-toggler-bar{
+    & .navbar-toggler-bar {
       width: 3px;
       height: 3px;
       border-radius: 50%;
       margin: 0 auto;
     }
-    .burger-lines{
+
+    .burger-lines {
       display: block;
       position: relative;
       background-color: #888;
@@ -66,16 +68,16 @@
     }
   }
 
-  .btn-round.btn-icon{
+  .btn-round.btn-icon {
     padding: 8px 9px;
   }
 
 
-  .navbar-nav{
-    .nav-item{
+  .navbar-nav {
+    .nav-item {
       margin: 0 3px;
-        
-      .nav-link{
+
+      .nav-link {
         color: $default-color;
         padding: $navbar-padding-a;
         margin: $navbar-margin-a;
@@ -83,47 +85,48 @@
         display: inline-flex;
         line-height: 40px;
 
-        &.btn{
+        &.btn {
           margin: $navbar-margin-a-btn;
           padding: $padding-base-vertical $padding-base-horizontal;
         }
 
-        &.btn-round{
+        &.btn-round {
           margin: $navbar-margin-a-btn-round;
         }
 
-        [class^="fa"]{
+        [class^="fa"] {
           font-size: $font-size-large + 1;
           position: relative;
           line-height: 40px;
           top: 1px;
         }
 
-        &:hover{
+        &:hover {
           color: $info-color;
         }
 
-        .stats{
+        .stats {
           margin-left: 10px;
         }
       }
 
-      .dropdown-menu{
+      .dropdown-menu {
         border-radius: $border-radius-extreme;
         margin-top: -5px;
 
-        .dropdown-item{
-          &:first-child{
+        .dropdown-item {
+          &:first-child {
             border-top-left-radius: 10px;
             border-top-right-radius: 10px;
           }
-          &:last-child{
+
+          &:last-child {
             border-bottom-left-radius: 10px;
             border-bottom-right-radius: 10px;
           }
         }
 
-        .divider{
+        .divider {
           height: 1px;
           margin: 5px 0;
           overflow: hidden;
@@ -132,7 +135,7 @@
       }
     }
 
-    .notification{
+    .notification {
       position: absolute;
       background-color: #FB404B;
       text-align: center;
@@ -148,7 +151,7 @@
       left: 7px;
     }
 
-    .dropdown-toggle:after{
+    .dropdown-toggle:after {
       display: inline-block;
       width: 0;
       height: 0;
@@ -161,21 +164,22 @@
       border-left: 4px solid transparent;
     }
   }
-  .btn{
+
+  .btn {
     margin: $navbar-margin-btn;
     font-size: $font-size-base;
   }
-  .btn-simple{
+
+  .btn-simple {
     font-size: $font-size-medium;
   }
 
-  &.fixed{
+  &.fixed {
     width: calc(100% - #{$sidebar-width});
     right: 0;
     left: auto;
     border-radius: 0;
   }
-
 }
 
 .navbar-transparent, [class*="navbar-ct"]{

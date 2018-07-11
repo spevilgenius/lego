@@ -21,6 +21,8 @@ function lego_theme_scripts()
 
 function lego_theme_styles()
 {
+    wp_register_style('iconstyle', get_template_directory_uri() . '/dist/static/css/nucleo_icons.css', array(), '1.0.0', 'all');
+    wp_enqueue_style('iconstyle'); // Enqueue it!
     wp_register_style('legostyle', get_template_directory_uri() . '/dist/static/css/app.css', array(), '1.0.0', 'all');
     wp_enqueue_style('legostyle'); // Enqueue it!
 }

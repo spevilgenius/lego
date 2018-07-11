@@ -8,7 +8,7 @@ import locale from 'element-ui/lib/locale'
 import 'bootstrap/dist/css/bootstrap.css'
 import 'vue-nav-tabs/themes/vue-tabs.scss'
 import './assets/sass/legobootstrap.scss'
-// import './assets/css/demo.css'
+import './assets/css/lego.css'
 import 'es6-promise/auto'
 locale.use(lang)
 

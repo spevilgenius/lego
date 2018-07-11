@@ -1,5 +1,5 @@
 <template>
-    <nav class="navbar navbar-expand-lg ">
+    <nav class="navbar navbar-expand-lg " :style="navbarStyle" :data-image="backgroundImage">
         <div class="container-fluid">
             <div class="navbar-minimize">
                 <button class="btn btn-outline btn-fill btn-round btn-icon d-none d-lg-block" @click="minimizeSidebar">
@@ -71,10 +71,21 @@
 </template>
 <script>
 export default {
+  props: {
+    backgroundImage: {
+      type: String,
+      default: 'wp-content/themes/lego/dist/static/img/LegoRed1x1.png'
+    }
+  },
   computed: {
     routeName () {
       const { name } = this.$route
       return this.capitalizeFirstLetter(name)
+    },
+    navbarStyle () {
+      return {
+        backgroundImage: `url(${this.backgroundImage})`
+      }
     }
   },
   data () {

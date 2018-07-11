@@ -26,7 +26,7 @@
 
 .sidebar{
   position: fixed;
-  top: 32px; // Account for wordpress admin bar. TODO: Add code to test if the bar is present
+  top: 0; // TODO: Add mehod to test if the bar is present and then adjust to compensate
   bottom: 0;
   left: 0;
   width: 240px;

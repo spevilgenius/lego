@@ -1,5 +1,5 @@
 <template>
-  <footer class="footer">
+  <footer class="footer" :style="footerStyle" :data-image="backgroundImage">
     <div class="container-fluid d-flex flex-wrap justify-content-between">
       <nav>
         <ul class="footer-menu">
@@ -18,8 +18,21 @@
   </footer>
 </template>
 <script>
-export default {}
-
+export default {
+  props: {
+    backgroundImage: {
+      type: String,
+      default: 'wp-content/themes/lego/dist/static/img/LegoRed1x1.png'
+    }
+  },
+  computed: {
+    footerStyle () {
+      return {
+        backgroundImage: `url(${this.backgroundImage})`
+      }
+    }
+  }
+}
 </script>
 <style>
 
