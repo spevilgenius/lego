@@ -65,7 +65,7 @@ export default {
             type: String,
             default: 'red',
             validator: (value) => {
-              let acceptedValues = ['white', 'blue', 'yellow', 'green', 'orange', '#ee4236', 'purple', 'black']
+              let acceptedValues = ['white', '#3399FF', '#F7D117', '#10CB31', '#FF7E14', '#ee4236', '#A5499C', '#212121']
               return acceptedValues.indexOf(value) !== -1
             }
           },
