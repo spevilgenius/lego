@@ -74,7 +74,7 @@ export default {
   props: {
     backgroundImage: {
       type: String,
-      default: 'wp-content/themes/lego/dist/static/img/LegoYellow1x1.png'
+      default: 'wp-content/themes/lego/dist/static/img/LegoRed1x1.png'
     }
   },
   computed: {

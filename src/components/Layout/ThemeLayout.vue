@@ -3,12 +3,12 @@
         <side-bar>
             <mobile-menu></mobile-menu>
             <template slot-scope="props" slot="links">
-                <sidebar-item :link="{name: 'Home', icon: 'nc-icon nc-chart-pie-35', path: '/home'}"></sidebar-item>
-                <sidebar-item :link="{name: 'Blog', icon: 'nc-icon nc-app', path: '/blog'}"></sidebar-item>
-                <sidebar-item :link="{name: 'Gallery', icon: 'nc-icon nc-notes', path: '/gallery'}"></sidebar-item>
-                <sidebar-item :link="{name: 'Links', icon: 'nc-icon nc-paper-2', path: '/links'}"></sidebar-item>
-                <sidebar-item :link="{name: 'About', icon: 'nc-icon nc-pin-3', path: '/about'}"></sidebar-item>
-                <sidebar-item :link="{name: 'Shop', icon: 'nc-icon nc-chart-bar-32', path: '/shop'}"></sidebar-item>
+                <sidebar-item :link="{name: 'Home', icon: 'nc-icon nc-chart-pie-35', path: '/home', backgroundColor: 'green'}"></sidebar-item>
+                <sidebar-item :link="{name: 'Blog', icon: 'nc-icon nc-app', path: '/blog', backgroundColor: '#ee4236'}"></sidebar-item>
+                <sidebar-item :link="{name: 'Gallery', icon: 'nc-icon nc-notes', path: '/gallery', backgroundColor: 'blue'}"></sidebar-item>
+                <sidebar-item :link="{name: 'Links', icon: 'nc-icon nc-paper-2', path: '/links', backgroundColor: 'orange'}"></sidebar-item>
+                <sidebar-item :link="{name: 'About', icon: 'nc-icon nc-pin-3', path: '/about', backgroundColor: 'purple'}"></sidebar-item>
+                <sidebar-item :link="{name: 'Shop', icon: 'nc-icon nc-chart-bar-32', path: '/shop', backgroundColor: 'black'}"></sidebar-item>
             </template>
         </side-bar>
         <div class="main-panel">

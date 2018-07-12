@@ -1,5 +1,5 @@
 <template>
-  <component :is="baseComponent" :to="link.path ? link.path : '/'" class="nav-item" :class="{active : isActive}" tag="li" :data-color="backgroundColor">
+  <component :is="baseComponent" :to="link.path ? link.path : '/'" class="nav-item" :class="{active : isActive}" tag="li">
     <a v-if="isMenu"
        class="nav-link sidebar-menu-item"
        :aria-expanded="!collapsed"
@@ -28,7 +28,8 @@
         :class="{active: link.active}"
         class="nav-link"
         :target="link.target"
-        :href="link.path">
+        :href="link.path"
+        :style="sidebarItemStyle">
         <template v-if="addLink">
           <span class="sidebar-mini">{{link.name.substring(0, 1)}}</span>
           <span class="sidebar-normal">{{link.name}}</span>
@@ -60,16 +61,16 @@ export default {
         return {
           name: '',
           path: '',
+          backgroundColor: {
+            type: String,
+            default: 'red',
+            validator: (value) => {
+              let acceptedValues = ['white', 'blue', 'yellow', 'green', 'orange', '#ee4236', 'purple', 'black']
+              return acceptedValues.indexOf(value) !== -1
+            }
+          },
           children: []
         }
-      }
-    },
-    backgroundColor: {
-      type: String,
-      default: 'red',
-      validator: (value) => {
-        let acceptedValues = ['white', 'blue', 'yellow', 'green', 'orange', 'red', 'purple']
-        return acceptedValues.indexOf(value) !== -1
       }
     }
   },
@@ -107,6 +108,11 @@ export default {
         }
       }
       return false
+    },
+    sidebarItemStyle () {
+      return {
+        backgroundColor: this.link.backgroundColor // `${this.backgroundColor}`
+      }
     }
   },
   methods: {

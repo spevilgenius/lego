@@ -56,11 +56,13 @@
   }
 
   .logo{
-    padding: 12px 0px 9px;
+    //padding: 12px 0px 9px;
     margin: 0;
     position: relative;
     z-index: 4;
     display: block;
+    height: 80px;
+    background-color: #ee4236;  // TODO: perhaps use a variable and make this changeable. Can also make as a property in the vue element
 
     a.logo-mini{
       float: left;
@@ -271,28 +273,34 @@
   .nav{
     float: none;
     display: block;
+    margin-top: 40px;
 
     .nav-item{
       .nav-link{
         color: $white-color;
-        margin: 5px 15px 0px 10px;
+        margin: 0 0 40px 0;
         opacity: .86;
         border-radius: 4px;
         text-transform: uppercase;
-        line-height: 30px;
+        line-height: 40px;
         font-size: 12px;
         font-weight: 600;
-        padding: 10px 15px;
         white-space: nowrap;
+        width: 160px;
+        text-align: center;
+        position: relative;
+        left: 40px;
+        height: 40px;
+        box-shadow: 1px -1px 2px 2px black;
 
         &:hover{
-          background: rgba(255, 255, 255, 0.13);
+          background: rgba(255, 255, 255, 0.13) !important;
           opacity: 1;
         }
 
         i{
           font-size: 28px;
-          margin-right: 15px;
+          //margin-right: 15px;
           width: 30px;
           text-align: center;
           vertical-align: middle;
@@ -385,7 +393,7 @@
       }
     }
 
-    &:before{
+    /*&:before{
       content: "";
       position: absolute;
       bottom: 0px;
@@ -393,7 +401,7 @@
       width: calc(100% - 30px);
       height: 1px;
       background-color: rgba($white-color, 0.3);
-    }
+    }*/
 
   }
   .logo-mini{
