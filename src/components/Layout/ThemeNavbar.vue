@@ -1,10 +1,11 @@
 <template>
     <nav class="navbar navbar-expand-lg " :style="navbarStyle" :data-image="backgroundImage">
-        <div class="container-fluid">
+        <div class="container-fluid nomargin nopadding">
             <div class="navbar-minimize">
-                <button class="btn btn-outline btn-fill btn-round btn-icon d-none d-lg-block" @click="minimizeSidebar">
-                    <i :class="$sidebar.isMinimized ? 'fa fa-ellipsis-v' : 'fa fa-navicon'"></i>
-                </button>
+                <!--<button class="legobtn legobtn-collapse" :style="ButtonStyle" @click="minimizeSidebar">-->
+              <button class="legobtn legobtn-collapse" @click="minimizeSidebar">
+                <i :class="$sidebar.isMinimized ? 'fa fa-ellipsis-v' : 'fa fa-navicon'"></i>
+              </button>
             </div>
             <a class="navbar-brand">{{this.$route.name}}</a>
             <button type="button" class="navbar-toggler navbar-toggler-right" :class="{toggled: $sidebar.showSidebar}" aria-expanded="false" @click="toggleSidebar">
@@ -75,6 +76,10 @@ export default {
     backgroundImage: {
       type: String,
       default: 'wp-content/themes/lego/dist/static/img/LegoRed1x1.png'
+    },
+    ButtonImage: {
+      type: String,
+      default: 'wp-content/themes/lego/dist/static/img/LegoBlack1x1.png'
     }
   },
   computed: {
@@ -85,6 +90,11 @@ export default {
     navbarStyle () {
       return {
         backgroundImage: `url(${this.backgroundImage})`
+      }
+    },
+    ButtonStyle () {
+      return {
+        backgroundImage: `url(${this.ButtonImage})`
       }
     }
   },
