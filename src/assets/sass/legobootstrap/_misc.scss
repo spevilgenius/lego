@@ -154,9 +154,12 @@ input:focus {
   background: rgba(0, 0, 0, 1);
   transition: 0.3s;
 }
-.legobtn:hover,
-.legobtn:focus,
-.legobtn.active {
+.legobtn:hover {
   background: rgba(0, 0, 0, 0.25);
   cursor: pointer;
 }
+.legobtn:focus,
+.legobtn.active {
+  outline: none;
+}
+i:focus { outline: none; }
