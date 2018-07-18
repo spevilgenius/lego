@@ -38,40 +38,38 @@
   //background-size: cover;
   //background-position: center center;
   .logo-img {
-    width: 34px;
+    width: 80px;
+    height: 80px;
     display: inline-block;
     height: 34px;
     margin-left: 0;
-    margin-right: 10px;
     background: #fff;
-    border-radius: 40px;
     text-align: center;
-    line-height: 34px;
 
     img {
-      max-width: 18px;
       position: relative;
     }
   }
 
   .logo {
-    //padding: 12px 0px 9px;
+    // padding: 12px 0px 9px;
     margin: 0;
     position: relative;
     z-index: 4;
     display: block;
     border-radius: 2px;
     height: 80px;
-    //background-color: #ee4236; // TODO: perhaps use a variable and make this changeable. Can also make as a property in the vue element
+    // background-color: #ee4236; // TODO: perhaps use a variable and make this changeable. Can also make as a property in the vue element
     background: rgba(255, 255, 255, 0.13) !important;
     box-shadow: 1px -1px 2px 2px black;
 
     a.logo-mini {
       float: left;
-      width: 30px;
+      width: 80px;
+      height: 80px;
       text-align: center;
-      margin-left: 23px;
-      margin-right: 15px;
+      margin-left: 0;
+      margin-right: 0;
       position: relative;
     }
 
@@ -83,14 +81,18 @@
 
     .simple-text {
       text-transform: uppercase;
-      padding: $padding-small-vertical $padding-zero;
+      padding: 22px 0;   // $padding-small-vertical $padding-zero;
       display: inline-block;
-      font-size: $font-size-large;
+      font-size: 24px;  // $font-size-large;
       font-weight: $font-weight-normal;
-      line-height: 30px;
+      line-height: 36px;
       white-space: nowrap;
       color: $white-color;
       overflow: hidden;
+      height: 80px;
+      width: 160px;
+      margin-left: 80px;
+      margin-right: 0;
     }
 
     p {
@@ -307,9 +309,9 @@
         }
 
         i {
-          font-size: 28px;
-          //margin-right: 15px;
-          width: 30px;
+          font-size: 24px;
+          margin-left: -10px;
+          width: 24px;
           text-align: center;
           vertical-align: middle;
           float: left;

@@ -63,7 +63,7 @@ export default {
     },
     logo: {
       type: String,
-      default: 'wp-content/themes/lego/dist/static/img/vue-logo.png'
+      default: 'wp-content/themes/lego/dist/static/img/LDSBLogo1.png'
     },
     sidebarLinks: {
       type: Array,
