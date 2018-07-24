@@ -1,5 +1,5 @@
 <template>
-  <div class="content">
+  <div class="content" id="contentbody">
     <div class="container-fluid">
       <transition name="fade" mode="out-in">
         <!-- your content here -->

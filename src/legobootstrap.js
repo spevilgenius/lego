@@ -1,3 +1,4 @@
+/* eslint-disable */
 import Components from './components'
 import GlobalComponents from './globalComponents'
 import GlobalDirectives from './globalDirectives'

@@ -14,6 +14,8 @@ define("THEME_URL", get_template_directory_uri());
 function lego_theme_scripts()
 {
     if ($GLOBALS['pagenow'] != 'wp-login.php' && !is_admin()) {
+        //wp_register_script('threejs', get_template_directory_uri() . '/dist/static/js/three.min.js', array(), '1.0.0', true);
+        //wp_enqueue_script('threejs'); // Enqueue it!
     	  wp_register_script('legoapp', get_template_directory_uri() . '/dist/static/js/app.js', array(), '1.0.0', true);
         wp_enqueue_script('legoapp'); // Enqueue it!
     }

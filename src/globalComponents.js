@@ -1,3 +1,4 @@
+/* eslint-disable */
 import DropDown from './components/Dropdown.vue'
 import Card from './components/Cards/Card.vue'
 

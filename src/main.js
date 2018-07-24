@@ -8,8 +8,6 @@ import routes from './routes'
 // components
 import ThemeLayout from '@/components/Layout/ThemeLayout.vue'
 
-// import routes from './router'
-
 Vue.use(VueRouter)
 Vue.use(LegoBootstrap)
 

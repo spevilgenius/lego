@@ -41,13 +41,17 @@
     width: 80px;
     height: 80px;
     display: inline-block;
-    height: 34px;
     margin-left: 0;
     background: #fff;
     text-align: center;
 
     img {
       position: relative;
+    }
+
+    canvas {
+      width: 80px;
+      height: 80px;
     }
   }
 
@@ -81,9 +85,9 @@
 
     .simple-text {
       text-transform: uppercase;
-      padding: 22px 0;   // $padding-small-vertical $padding-zero;
+      padding: 22px 0; // $padding-small-vertical $padding-zero;
       display: inline-block;
-      font-size: 24px;  // $font-size-large;
+      font-size: 24px; // $font-size-large;
       font-weight: $font-weight-normal;
       line-height: 36px;
       white-space: nowrap;
